@@ -88,7 +88,7 @@ const PRODUCTS = [
     desc:   'Mochila técnica para laptop con múltiples compartimentos.',
     cat:    'Backpack',
     price:  '$1,500.00',
-    genero: 'Unisex',
+    genero: 'Caballero',
     detalle: 'Medidas: PENDIENTE',
 },
 
