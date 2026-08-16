@@ -517,7 +517,7 @@ const PRODUCTS = [
     desc:   'Sneaker negro monocromático con etiqueta roja.',
     cat:    'Tennis',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: 26',
 },
 {
