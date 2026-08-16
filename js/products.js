@@ -215,7 +215,7 @@ const PRODUCTS = [
     cat:    'Jeans',
     price:  '$700.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: 32',
 },
 {
     img:    'images/jeans-levis-513-azul-claro.jpg',
@@ -224,7 +224,7 @@ const PRODUCTS = [
     cat:    'Jeans',
     price:  '$700.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: 32',
 },
 {
     img:    'images/pantalon-gap-khaki-slim-olivo.jpg',
@@ -233,7 +233,7 @@ const PRODUCTS = [
     cat:    'Jeans',
     price:  '$1,200.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: 32',
 },
 
 // ── Playera ─────────────────────────────────────────────────
@@ -245,7 +245,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Dama',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-menta.jpg',
@@ -254,7 +254,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-mostaza-v.jpg',
@@ -263,7 +263,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-navy-cuello.jpg',
@@ -272,7 +272,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-negro-gris.jpg',
@@ -281,7 +281,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-rojo-v.jpg',
@@ -290,7 +290,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/playera-u.s.-polo-assn.-rosa.jpg',
@@ -299,7 +299,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$400.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-azul-performance.jpg',
@@ -308,7 +308,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-azul-petroleo.jpg',
@@ -317,7 +317,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-cafe.jpg',
@@ -326,7 +326,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-mostaza.jpg',
@@ -335,7 +335,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-navy-slim.jpg',
@@ -344,7 +344,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-verde-bosque.jpg',
@@ -353,7 +353,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 {
     img:    'images/polo-u.s.-polo-assn.-vino.jpg',
@@ -362,7 +362,7 @@ const PRODUCTS = [
     cat:    'Playera',
     price:  '$500.00',
     genero: 'Caballero',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: Mediana',
 },
 
 // ── Satchel ─────────────────────────────────────────────────
