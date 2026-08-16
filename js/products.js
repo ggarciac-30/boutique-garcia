@@ -426,6 +426,7 @@ const PRODUCTS = [
     price:  '$1,100.00',
     genero: 'Dama',
     detalle: 'Talla: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/hoodie-reebok-arena.jpg',
@@ -453,6 +454,7 @@ const PRODUCTS = [
     price:  '$1,100.00',
     genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/hoodie-tommy-hilfiger-gris.jpg',
@@ -480,6 +482,7 @@ const PRODUCTS = [
     price:  '$650.00',
     genero: 'Unisex',
     detalle: 'Talla: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/sweatshirt-gap-verde-esmeralda.jpg',
