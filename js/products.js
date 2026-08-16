@@ -60,7 +60,7 @@ const PRODUCTS = [
     desc:   'Collar y aretes con mariposas en zirconia cúbica.',
     cat:    'Accesorios',
     price:  '$600.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
 },
 {
     img:    'images/set-pulseras-nautica-bicolor.jpg',
@@ -68,7 +68,7 @@ const PRODUCTS = [
     desc:   '6 bangles en oro y plata lisos y delgados.',
     cat:    'Accesorios',
     price:  '$450.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
 },
  
 // ── Backpack ─────────────────────────────────────────────────
@@ -79,7 +79,7 @@ const PRODUCTS = [
     desc:   'Mochila profesional para laptop con detalles rojo.',
     cat:    'Backpack',
     price:  '$2,000.00',
-    genero: 'PENDIENTE',
+    genero: 'Unisex',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -88,7 +88,7 @@ const PRODUCTS = [
     desc:   'Mochila técnica para laptop con múltiples compartimentos.',
     cat:    'Backpack',
     price:  '$1,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Unisex',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -100,7 +100,7 @@ const PRODUCTS = [
     desc:   'Bolsa cámara con bolsillo frontal rosa palo.',
     cat:    'Crossbody',
     price:  '$2,300.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -109,7 +109,7 @@ const PRODUCTS = [
     desc:   'Mini cámara lisa en azul pastel con monograma.',
     cat:    'Crossbody',
     price:  '$1,600.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -118,7 +118,7 @@ const PRODUCTS = [
     desc:   'Cámara con franja tricolor y botón dorado.',
     cat:    'Crossbody',
     price:  '$1,400.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -127,7 +127,7 @@ const PRODUCTS = [
     desc:   'Forma semicircular lisa con logo TH dorado.',
     cat:    'Crossbody',
     price:  '$1,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -136,7 +136,7 @@ const PRODUCTS = [
     desc:   'Dos piezas: solapa con monograma y franja tejida.',
     cat:    'Crossbody',
     price:  '$1,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -145,7 +145,7 @@ const PRODUCTS = [
     desc:   'Bolsa sling deportiva en tela técnica nude.',
     cat:    'Crossbody',
     price:  '$950.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -154,7 +154,7 @@ const PRODUCTS = [
     desc:   'Sling deportivo en nylon con logo Reebok.',
     cat:    'Crossbody',
     price:  '$950.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -166,7 +166,7 @@ const PRODUCTS = [
     desc:   'Forma media luna con logo CK y herraje plateado.',
     cat:    'Handbag',
     price:  '$2,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -175,7 +175,7 @@ const PRODUCTS = [
     desc:   'Compacta tipo barril con pañuelo y bandolera.',
     cat:    'Handbag',
     price:  '$1,700.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -184,7 +184,7 @@ const PRODUCTS = [
     desc:   'Logo texto repetido en tela con asas camel.',
     cat:    'Handbag',
     price:  '$1,700.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -193,7 +193,7 @@ const PRODUCTS = [
     desc:   'Formato boston estructurado con herrajes dorados.',
     cat:    'Handbag',
     price:  '$1,600.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -205,7 +205,7 @@ const PRODUCTS = [
     desc:   'Jean slim en denim suave tono verde olivo claro.',
     cat:    'Jeans',
     price:  '$1,000.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -214,7 +214,7 @@ const PRODUCTS = [
     desc:   'Jean regular fit en lavado medio clásico.',
     cat:    'Jeans',
     price:  '$700.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -223,7 +223,7 @@ const PRODUCTS = [
     desc:   'Jean slim fit en lavado claro desgastado.',
     cat:    'Jeans',
     price:  '$700.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -232,7 +232,7 @@ const PRODUCTS = [
     desc:   'Chino slim fit color olivo oscuro.',
     cat:    'Jeans',
     price:  '$1,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 
@@ -244,7 +244,7 @@ const PRODUCTS = [
     desc:   'Camiseta cuello V en azul aqua con ribete blanco.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -253,7 +253,7 @@ const PRODUCTS = [
     desc:   'Camiseta cuello redondo en verde menta con ribete azul.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -262,7 +262,7 @@ const PRODUCTS = [
     desc:   'Camiseta cuello V en mostaza vibrante.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -271,7 +271,7 @@ const PRODUCTS = [
     desc:   'Camiseta navy cuello redondo con ribete gris.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -280,7 +280,7 @@ const PRODUCTS = [
     desc:   'Camiseta negra cuello redondo con ribete gris.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -289,7 +289,7 @@ const PRODUCTS = [
     desc:   'Camiseta cuello V en rojo intenso.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -298,7 +298,7 @@ const PRODUCTS = [
     desc:   'Camiseta cuello redondo en rosa con ribete navy.',
     cat:    'Playera',
     price:  '$400.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -307,7 +307,7 @@ const PRODUCTS = [
     desc:   'Polo performance piqué en azul medio.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -316,7 +316,7 @@ const PRODUCTS = [
     desc:   'Polo slim fit en azul petróleo con logo small.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -325,7 +325,7 @@ const PRODUCTS = [
     desc:   'Polo clásico en tono café oscuro.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -334,7 +334,7 @@ const PRODUCTS = [
     desc:   'Polo performance piqué en mostaza vibrante.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -343,7 +343,7 @@ const PRODUCTS = [
     desc:   'Polo slim fit navy con logo blanco bordado.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -352,7 +352,7 @@ const PRODUCTS = [
     desc:   'Polo performance piqué en verde cazador.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -361,7 +361,7 @@ const PRODUCTS = [
     desc:   'Polo de piqué luxury feel en vino.',
     cat:    'Playera',
     price:  '$500.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 
@@ -373,7 +373,7 @@ const PRODUCTS = [
     desc:   'Bolsa tipo maletín con dije corazón Guess.',
     cat:    'Satchel',
     price:  '$1,900.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -382,7 +382,7 @@ const PRODUCTS = [
     desc:   'Diseño ajedrezado en relieve con dije llave dorado.',
     cat:    'Satchel',
     price:  '$1,600.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -394,7 +394,7 @@ const PRODUCTS = [
     desc:   'Tejido monograma blanco/navy con solapa y asa.',
     cat:    'Shoulder Bag',
     price:  '$1,700.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -406,7 +406,7 @@ const PRODUCTS = [
     desc:   'Chamarra bomber reversible en azul y verde olivo.',
     cat:    'Sudadera',
     price:  '$700.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -415,7 +415,7 @@ const PRODUCTS = [
     desc:   'Sudadera bicolor gris melange con mangas rosas.',
     cat:    'Sudadera',
     price:  '$600.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -424,7 +424,7 @@ const PRODUCTS = [
     desc:   'Sudadera con gráfico tipográfico Nike Sportswear.',
     cat:    'Sudadera',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -442,7 +442,7 @@ const PRODUCTS = [
     desc:   'Sudadera negra con logo Reebok en contorno blanco.',
     cat:    'Sudadera',
     price:  '$800.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -451,7 +451,7 @@ const PRODUCTS = [
     desc:   'Sudadera oversized con letras HILFIGER bordadas.',
     cat:    'Sudadera',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -460,7 +460,7 @@ const PRODUCTS = [
     desc:   'Sudadera gris melange con logo Tommy Hilfiger.',
     cat:    'Sudadera',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -469,7 +469,7 @@ const PRODUCTS = [
     desc:   'Sudadera lisa con logo UA bordado en pecho.',
     cat:    'Sudadera',
     price:  '$800.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -478,7 +478,7 @@ const PRODUCTS = [
     desc:   'Sudadera negra con logo GAP tono a tono oversized.',
     cat:    'Sudadera',
     price:  '$650.00',
-    genero: 'PENDIENTE',
+    genero: 'Unisex',
     detalle: 'Talla: PENDIENTE',
 },
 {
@@ -487,7 +487,7 @@ const PRODUCTS = [
     desc:   'Sudadera cuello redondo con logo GAP menta.',
     cat:    'Sudadera',
     price:  '$650.00',
-    genero: 'PENDIENTE',
+    genero: 'Unisex',
     detalle: 'Talla: PENDIENTE',
 },
 
@@ -499,17 +499,17 @@ const PRODUCTS = [
     desc:   'Sneaker blanco con candado dorado lateral.',
     cat:    'Tennis',
     price:  '$1,600.00',
-    genero: 'PENDIENTE',
-    detalle: 'Talla: PENDIENTE',
+    genero: 'Dama',
+    detalle: 'Talla: 23',
 },
 {
     img:    'images/tenis-levi\'s-navy-canvas.jpg',
     nombre: 'Tenis Levi\'s Navy Canvas',
-    desc:   'Sneaker de tela en azul marino con suela blanca.',
+    desc:   'Sneaker de tela en negro con suela blanca.',
     cat:    'Tennis',
     price:  '$1,000.00',
-    genero: 'PENDIENTE',
-    detalle: 'Talla: PENDIENTE',
+    genero: 'Caballero',
+    detalle: 'Talla: 27.5',
 },
 {
     img:    'images/tenis-levi\'s-negro-total.jpg',
@@ -518,7 +518,7 @@ const PRODUCTS = [
     cat:    'Tennis',
     price:  '$1,100.00',
     genero: 'PENDIENTE',
-    detalle: 'Talla: PENDIENTE',
+    detalle: 'Talla: 26',
 },
 {
     img:    'images/tenis-tommy-hilfiger-blanco-rosa.jpg',
@@ -526,8 +526,8 @@ const PRODUCTS = [
     desc:   'Sneaker clásico con franja y logo TH rosado.',
     cat:    'Tennis',
     price:  '$2,000.00',
-    genero: 'PENDIENTE',
-    detalle: 'Talla: PENDIENTE',
+    genero: 'Dama',
+    detalle: 'Talla: 23',
 },
 
 // ── Tote Bag ─────────────────────────────────────────────────
@@ -538,7 +538,7 @@ const PRODUCTS = [
     desc:   'Monograma G fino con franja nude y detalles dorados.',
     cat:    'Tote',
     price:  '$2,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -547,7 +547,7 @@ const PRODUCTS = [
     desc:   'Clásica Guess con franja central y candado.',
     cat:    'Tote',
     price:  '$2,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -556,7 +556,7 @@ const PRODUCTS = [
     desc:   'Elegante con letras Guess en herrajes plateados.',
     cat:    'Tote',
     price:  '$2,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -565,7 +565,7 @@ const PRODUCTS = [
     desc:   'Monograma en relieve tono a tono, logo triangular.',
     cat:    'Tote',
     price:  '$2,500.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -574,7 +574,7 @@ const PRODUCTS = [
     desc:   'Diseño estructurado con cadena decorativa frontal.',
     cat:    'Tote',
     price:  '$2,400.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -583,7 +583,7 @@ const PRODUCTS = [
     desc:   'Set de dos piezas, cuerpo liso y bolso interior.',
     cat:    'Tote',
     price:  '$2,400.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -592,7 +592,7 @@ const PRODUCTS = [
     desc:   'Acabado capitonado con cadena y candado plateados.',
     cat:    'Tote',
     price:  '$2,400.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -601,7 +601,7 @@ const PRODUCTS = [
     desc:   'Diseño bicolor camel y blanco, logo dorado.',
     cat:    'Tote',
     price:  '$2,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -610,7 +610,7 @@ const PRODUCTS = [
     desc:   'Amplia con franja signature rojo-blanco-azul.',
     cat:    'Tote',
     price:  '$2,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 
@@ -622,7 +622,7 @@ const PRODUCTS = [
     desc:   'Cartera larga negra con logo GUESS plateado.',
     cat:    'Wallet',
     price:  '$1,200.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
@@ -631,25 +631,25 @@ const PRODUCTS = [
     desc:   'Cartera CK negra y cartera SM café, piel RFID. (Vta x Pza)',
     cat:    'Wallet',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Medidas: PENDIENTE',
 },
 {
     img:    'images/set-carteras-guess-rosa-y-crema.jpg',
-    nombre: 'Set Carteras Guess Rosa y Crema',
-    desc:   'Carteras largas con monograma G. (Vta por Pza)',
+    nombre: 'Carteras Guess Rosa y Crema',
+    desc:   'Cartera larga con monograma G. (Vta por Pza)',
     cat:    'Wallet',
     price:  '$1,000.00',
-    genero: 'PENDIENTE',
+    genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
 },
 {
     img:    'images/set-carteras-tommy-hilfiger-piel.jpg',
-    nombre: 'Set Carteras Tommy Hilfiger Piel',
-    desc:   'Dos carteras de piel con protección RFID.',
+    nombre: 'Carteras Tommy Hilfiger Piel',
+    desc:   'Cartera de piel con protección RFID. (Vta x Pza)',
     cat:    'Wallet',
     price:  '$1,100.00',
-    genero: 'PENDIENTE',
+    genero: 'Caballero',
     detalle: 'Medidas: PENDIENTE',
 },
 
