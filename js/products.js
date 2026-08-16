@@ -66,7 +66,7 @@ const PRODUCTS = [
     img:    'images/set-pulseras-nautica-bicolor.jpg',
     nombre: 'Set Pulseras Nautica Bicolor',
     desc:   '6 bangles en oro y plata lisos y delgados.',
-    cat:    'Accesorios',
+    cat:    'Caballero',
     price:  '$450.00',
     genero: 'Dama',
 },
@@ -79,7 +79,7 @@ const PRODUCTS = [
     desc:   'Mochila profesional para laptop con detalles rojo.',
     cat:    'Backpack',
     price:  '$2,000.00',
-    genero: 'Unisex',
+    genero: 'Caballero',
     detalle: 'Medidas: PENDIENTE',
 },
 {
