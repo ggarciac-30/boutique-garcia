@@ -406,7 +406,7 @@ const PRODUCTS = [
     desc:   'Chamarra bomber reversible en azul y verde olivo.',
     cat:    'Sudadera',
     price:  '$700.00',
-    genero: 'Dama',
+    genero: 'Caballero',
     detalle: 'Talla: PENDIENTE',
 },
 {
