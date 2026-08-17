@@ -615,6 +615,7 @@ const PRODUCTS = [
     price:  '$2,200.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 
 // ── Wallet ─────────────────────────────────────────────────
@@ -627,6 +628,7 @@ const PRODUCTS = [
     price:  '$1,200.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/set-carteras-ck-y-steve-madden.jpg',
