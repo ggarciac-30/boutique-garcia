@@ -13,7 +13,7 @@ var DISCOUNT_RULES = [
   // ACTIVA — 15% en artículos por arriba de $2,000. Va PRIMERO porque
   // es más específica: si un producto cuesta $2,500, queremos que
   // gane esta regla (15%) y no la general de abajo (10%).
-  { test: function(p) { return parseFloat(p.price.replace(/[^0-9.]/g,'')) > 2000; }, percent: 15 },
+  //{ test: function(p) { return parseFloat(p.price.replace(/[^0-9.]/g,'')) > 2000; }, percent: 15 },
 
   // APAGADA — 10% en TODA la tienda. Se desactivó al agregar el
   // descuento de CONTADO. Para reactivarla, descomenta la línea de
