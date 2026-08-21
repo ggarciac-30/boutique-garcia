@@ -3,6 +3,8 @@
 Catálogo digital de ropa y accesorios importados, publicado como sitio
 estático (GitHub Pages). Sin backend, sin build — HTML, CSS y JS puros.
 
+🔗 **Sitio en vivo:** [https://ggarciac-30.github.io/business-english-course/](https://ggarciac-30.github.io/boutique-garcia/)
+
 ## Estructura del proyecto
 
 ```
