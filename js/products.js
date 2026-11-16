@@ -102,6 +102,7 @@ const PRODUCTS = [
     price:  '$2,300.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/crossbody-guess-azul-cielo.jpg',
@@ -129,6 +130,7 @@ const PRODUCTS = [
     price:  '$1,200.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/crossbody-tommy-hilfiger-negro-y-navy.jpg',
@@ -177,6 +179,7 @@ const PRODUCTS = [
     price:  '$1,700.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/mini-barrel-steve-madden-camel-texto.jpg',
@@ -384,6 +387,7 @@ const PRODUCTS = [
     price:  '$1,600.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 
 // ── Shoulder Bag ─────────────────────────────────────────────────
@@ -396,6 +400,7 @@ const PRODUCTS = [
     price:  '$1,700.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 
 // ── Sudadera ─────────────────────────────────────────────────
@@ -552,6 +557,7 @@ const PRODUCTS = [
     price:  '$2,500.00',
     genero: 'Dama',
     detalle: 'Medidas: PENDIENTE',
+    activo: false,
 },
 {
     img:    'images/tote-guess-nude-plateado.jpg',
