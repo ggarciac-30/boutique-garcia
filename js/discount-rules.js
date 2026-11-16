@@ -19,7 +19,7 @@ var DISCOUNT_RULES = [
   // descuento de CONTADO. Para reactivarla, descomenta la línea de
   // abajo (recuerda dejarla AL FINAL: como es la más general,
   // cualquier regla más específica de arriba seguirá funcionando).
-  // { test: function(p) { return true; }, percent: 10 },
+  { test: function(p) { return true; }, percent: 10 },
 
   // Ejemplo — 20% de descuento en toda una categoría:
   // { test: function(p) { return p.cat === 'Sudadera'; }, percent: 20 },
@@ -58,7 +58,7 @@ function getDiscountPercent(p) {
 //
 //  Para desactivarla en todo el sitio, pon CONTADO_ACTIVO = false.
 // ═══════════════════════════════════════════════════════════════
-var CONTADO_ACTIVO = true;
+var CONTADO_ACTIVO = false;
 var CONTADO_PERCENT = 25;
 
 function getCashPrice(p) {
