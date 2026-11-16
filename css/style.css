@@ -719,3 +719,30 @@ header p {
   .price-current  { font-size: 22px; }
   .price-original { font-size: 13px; margin-top: 4px; }
 }
+
+/* Sticker promocional flotante (El Buen Fin) - sobre el boton de WhatsApp */
+.promo-sticker {
+  position: fixed;
+  right: 22px;
+  bottom: 80px;
+  width: 140px;
+  height: auto;
+  z-index: 998;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.30));
+  animation: sticker-pop 0.6s ease-out both, sticker-float 4s ease-in-out 0.6s infinite;
+}
+@keyframes sticker-pop {
+  from { transform: scale(0.6) rotate(-20deg); opacity: 0; }
+  to   { transform: scale(1) rotate(-6deg); opacity: 1; }
+}
+@keyframes sticker-float {
+  0%, 100% { transform: rotate(-6deg) translateY(0); }
+  50%      { transform: rotate(-6deg) translateY(-6px); }
+}
+@media (max-width: 700px) {
+  .promo-sticker { width: 120px; right: 30px; bottom: 76px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .promo-sticker { animation: none; transform: rotate(-6deg); }
+}
