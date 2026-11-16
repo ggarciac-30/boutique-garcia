@@ -455,37 +455,70 @@ header p {
 .price-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2px;
-  margin-top: 6px;
-}
-.price-original {
-  font-size: 11px;
-  color: var(--text-light);
-  text-decoration: line-through;
+  align-items: flex-start;
+  text-align: left;
+  gap: 3px;
+  margin-top: 8px;
 }
 .price-row {
   display: flex;
-  align-items: center;
-  gap: 7px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 2px;
+  line-height: 1;
 }
+/* Precio protagonista: grande, centavos en superíndice */
 .price-current {
-  display: inline-block;
-  font-size: 13px;
-  color: var(--azure-deep);
-  font-weight: 700;
-  background: #e7f0f6;
-  padding: 4px 8px;
-  border-radius: 999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--charcoal);
+  font-variant-numeric: lining-nums;
+}
+.price-current.is-sale { color: #d0021b; }
+.price-current sup {
+  font-size: 0.48em;
+  font-weight: 600;
+  vertical-align: top;
+  position: relative;
+  top: 0.12em;
+  margin-left: 2px;
+  letter-spacing: 0;
+}
+/* Precio de lista tachado, a la derecha del precio protagonista */
+.price-original {
+  font-size: 15px;
+  color: var(--text-light);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  margin-top: 5px;
+}
+.price-original sup {
+  font-size: 0.6em;
+  vertical-align: top;
+  position: relative;
+  top: 0.05em;
+  margin-left: 1px;
+}
+/* Línea de apoyo: condición del precio + % OFF */
+.price-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #1f9254;
+  letter-spacing: 0.2px;
 }
 .price-badge {
   font-size: 10px;
   font-weight: 700;
   color: #ffffff;
   background: #1f9254;
-  padding: 3px 7px;
-  border-radius: 5px;
+  padding: 2px 6px;
+  border-radius: 4px;
   letter-spacing: 0.2px;
   white-space: nowrap;
 }
@@ -584,4 +617,11 @@ header p {
   flex-direction: column !important;
   flex: 1 !important;
   width: 100% !important;
+}
+
+/* Precio en celular: un poco más chico para que precio + tachado
+   quepan en la misma línea dentro de la columna angosta. */
+@media (max-width: 480px) {
+  .price-current  { font-size: 22px; }
+  .price-original { font-size: 13px; margin-top: 4px; }
 }

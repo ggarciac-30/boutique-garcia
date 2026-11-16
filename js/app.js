@@ -59,23 +59,50 @@ function displayPrice(p) {
   if (!pct) return p.price;
   return formatMXN(parsePriceNumber(p.price) * (1 - pct / 100));
 }
+// Parte un precio "$1,959.30" en entero ($1,959) y centavos (30) para
+// mostrar los centavos en superíndice, estilo tienda departamental.
+function moneyHTML(str, cls) {
+  var parts = String(str).split('.');
+  var cents = parts[1] ? parts[1].slice(0, 2) : '00';
+  return '<span class="' + cls + '">' + parts[0] + '<sup>' + cents + '</sup></span>';
+}
+
+// Bloque de precio. Jerarquía visual:
+//   1) Precio a pagar, grande y en rojo (centavos en superíndice)
+//   2) Precio de lista tachado a un lado, en gris
+//   3) Línea de apoyo: condición del precio + % OFF (y meses si aplica)
+// Prioridad del precio protagonista:
+//   a) Descuento normal (campo `descuento` o DISCOUNT_RULES)
+//   b) Si no hay, precio de CONTADO (CONTADO_ACTIVO en discount-rules.js)
+//   c) Si tampoco, solo el precio de lista, sin tachado ni rojo
 function priceBlockHTML(p) {
   var pct = getDiscountPercent(p);
-
-  if (!pct) {
-    return '<div class="price-block"><div class="price-row"><span class="price-current">' + p.price + '</span></div></div>';
-  }
-
-  var finalPrice = parsePriceNumber(displayPrice(p));
+  var cashPrice = getCashPrice(p);
   var html = '<div class="price-block">';
-  html +=   '<div class="price-original">' + p.price + '</div>';
-  html +=   '<div class="price-row">';
-  html +=     '<span class="price-current">' + displayPrice(p) + '</span>';
-  html +=     '<span class="price-badge">' + pct + '% OFF</span>';
-  html +=   '</div>';
-  if (p.meses) {
-    html += '<div class="price-installments">' + p.meses + ' meses de ' + formatMXN(calcularMensualidad(finalPrice, p.meses)) + '</div>';
+
+  if (pct) {
+    var finalPrice = parsePriceNumber(displayPrice(p));
+    html += '<div class="price-row">';
+    html +=   moneyHTML(displayPrice(p), 'price-current is-sale');
+    html +=   moneyHTML(p.price, 'price-original');
+    html += '</div>';
+    html += '<div class="price-meta"><span class="price-badge">' + pct + '% OFF</span></div>';
+    if (cashPrice) {
+      html += '<div class="price-installments">o ' + cashPrice + ' de contado</div>';
+    }
+    if (p.meses) {
+      html += '<div class="price-installments">' + p.meses + ' meses de ' + formatMXN(calcularMensualidad(finalPrice, p.meses)) + '</div>';
+    }
+  } else if (cashPrice) {
+    html += '<div class="price-row">';
+    html +=   moneyHTML(cashPrice, 'price-current is-sale');
+    html +=   moneyHTML(p.price, 'price-original');
+    html += '</div>';
+    html += '<div class="price-meta">De contado <span class="price-badge">' + CONTADO_PERCENT + '% OFF</span></div>';
+  } else {
+    html += '<div class="price-row">' + moneyHTML(p.price, 'price-current') + '</div>';
   }
+
   html += '</div>';
   return html;
 }
@@ -105,7 +132,9 @@ function cardHTML(p, i) {
   html +=   '<div class="card-img-wrap">';
   html +=     imgHTML;
   html +=     '<span class="card-badge">' + p.cat + '</span>';
-  html +=     cashBadgeHTML(p);
+  // Listón CONTADO sobre la foto: desactivado, ese precio ya es el
+  // protagonista del bloque de precio. Para regresarlo, descomenta:
+  // html +=     cashBadgeHTML(p);
   html +=   '</div>';
   html +=   '<div class="card-body">';
   html +=     '<div class="card-name">' + p.nombre + '</div>';
