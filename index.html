@@ -41,17 +41,25 @@
     <h1>Boutique <em>Garcia</em></h1>
     <p>Nuevas colecciones disponibles</p>
     <div class="header-line"></div>
-    <div class="brand-strip">
-      <span>Nike</span>
-      <span class="brand-dot">·</span>
-      <span>Adidas</span>
-      <span class="brand-dot">·</span>
-      <span>Levi's</span>
-      <span class="brand-dot">·</span>
-      <span>Tommy Hilfiger</span>
-      <span class="brand-dot">·</span>
-      <span>Calvin Klein</span>
-    </div>
+    <!-- Marcas clicables: al tocar una, el catálogo se filtra por esa
+         marca. data-brand es el texto que se busca (palabra completa) en
+         el nombre/descripción del producto. Para agregar una marca, copia
+         una línea <button>. "otros" muestra lo que no es de ninguna marca
+         de la lista — déjalo siempre al final. -->
+    <div class="brand-ask">¿Cuál es tu marca favorita?</div>
+    <nav class="brand-strip" aria-label="Filtrar por marca">
+      <button type="button" class="brand-link" data-brand="Nike">Nike</button>
+      <button type="button" class="brand-link" data-brand="Adidas">Adidas</button>
+      <button type="button" class="brand-link" data-brand="Levi's">Levi's</button>
+      <button type="button" class="brand-link" data-brand="Tommy Hilfiger">Tommy Hilfiger</button>
+      <button type="button" class="brand-link" data-brand="Calvin Klein">Calvin Klein</button>
+      <button type="button" class="brand-link" data-brand="GAP">GAP</button>
+      <button type="button" class="brand-link" data-brand="Guess">Guess</button>
+      <button type="button" class="brand-link" data-brand="Nautica">Nautica</button>
+      <button type="button" class="brand-link" data-brand="Steve Madden">Steve Madden</button>
+      <button type="button" class="brand-link brand-link--otros" data-brand="otros">Otros</button>
+    </nav>
+    <div class="brand-hint">Productos auténticos importados de EE. UU.</div>
     <div class="header-tagline">Authentic. Stylish. Yours.</div>
   </header>
 
@@ -94,6 +102,7 @@
   <!-- ── RESULTS BAR ── -->
   <div class="results-bar">
     <span id="resultsCount">62 productos</span>
+    <button type="button" id="brandTag" class="brand-tag" hidden></button>
   </div>
 
   <!-- ── PRODUCT GRID ── -->

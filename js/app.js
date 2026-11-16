@@ -169,8 +169,10 @@ function renderGrid(list) {
 }
 
 var activeFilter = 'Todos';
-var activeGender = 'Dama';   // el interruptor siempre tiene una posición elegida
+var activeGender = 'Dama';   // 'Dama' | 'Caballero' | 'Todos' (solo al filtrar por marca)
+var lastGender   = 'Dama';   // vista a la que se regresa al quitar el filtro de marca
 var searchTerm   = '';
+var activeBrand  = '';     // '' = sin filtro, 'otros' = marcas no listadas, o el nombre de la marca
 
 // Catálogo base: se excluyen aquí los productos marcados activo: false
 // (sin existencia). Todo lo demás (filtros, búsqueda) parte de esta lista.
@@ -182,14 +184,38 @@ var AVAILABLE_PRODUCTS = PRODUCTS.filter(function(p) { return p.activo !== false
 //    en ambos casos se muestra en las dos vistas para no ocultarlo
 //    por error mientras no se haya revisado o si aplica a ambos.
 function matchesGender(p) {
+  if (activeGender === 'Todos') return true;   // marca elegida: Dama + Caballero
   return p.genero === activeGender ||
          p.genero === 'Unisex' ||
          p.genero === 'PENDIENTE' ||
          !p.genero;
 }
 
+// ── Filtro por marca ─────────────────────────────────────────────
+// Las marcas salen de los botones del encabezado (data-brand). Se
+// compara por palabra completa en nombre + descripción, para que
+// "GAP" no coincida con otra palabra que lo contenga.
+var BRAND_LIST = Array.prototype.map.call(
+  document.querySelectorAll('.brand-link[data-brand]:not([data-brand="otros"])'),
+  function(b) { return b.dataset.brand; }
+);
+function brandRegex(brand) {
+  var safe = brand.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp('(^|[^a-z\u00e0-\u00ff])' + safe + '($|[^a-z\u00e0-\u00ff])', 'i');
+}
+function matchesBrand(p, brand) {
+  var text = p.nombre + ' ' + p.desc;
+  if (brand === 'otros') {
+    return !BRAND_LIST.some(function(b) { return brandRegex(b).test(text); });
+  }
+  return brandRegex(brand).test(text);
+}
+
 function applyFilters() {
   var list = AVAILABLE_PRODUCTS.filter(matchesGender);
+  if (activeBrand) {
+    list = list.filter(function(p) { return matchesBrand(p, activeBrand); });
+  }
   if (activeFilter !== 'Todos') {
     list = list.filter(function(p) { return p.cat === activeFilter; });
   }
@@ -209,6 +235,7 @@ document.querySelectorAll('.gender-btn').forEach(function(btn) {
     document.querySelectorAll('.gender-btn').forEach(function(b) { b.classList.remove('active'); });
     btn.classList.add('active');
     activeGender = btn.dataset.gender;
+    lastGender   = activeGender;
     applyFilters();
   });
 });
@@ -220,7 +247,89 @@ document.getElementById('categorySelect').addEventListener('change', function(e)
 
 document.getElementById('searchInput').addEventListener('input', function(e) {
   searchTerm = e.target.value.trim();
+  // Escribir en el buscador quita el filtro de marca (búsqueda libre).
+  if (activeBrand) { clearBrand(); syncBrandLinks(); }
   applyFilters();
+});
+
+// ── Marcas clicables del encabezado ──────────────────────────────
+// Tocar una marca = mostrar TODO lo de esa marca (Dama y Caballero),
+// limpiar el buscador, regresar la categoría a "Todos" y bajar al catálogo.
+// Tocarla otra vez quita el filtro. "Otros" = marcas no listadas.
+// g = 'Dama' | 'Caballero' | 'Todos'. Con 'Todos' ningún botón del
+// interruptor queda marcado: se ven ambos géneros a la vez.
+function setGender(g) {
+  activeGender = g;
+  document.querySelectorAll('.gender-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.gender === g);
+  });
+}
+
+// Quitar el filtro de marca regresa al cliente a la vista Dama o
+// Caballero en la que estaba antes de tocar la marca.
+function clearBrand() {
+  activeBrand = '';
+  if (activeGender === 'Todos') setGender(lastGender);
+}
+
+function syncBrandLinks() {
+  var label = '';
+  document.querySelectorAll('.brand-link').forEach(function(b) {
+    var on = b.dataset.brand === activeBrand;
+    b.classList.toggle('is-active', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (on) label = b.textContent;
+  });
+  var tag = document.getElementById('brandTag');
+  if (!tag) return;
+  tag.hidden = !activeBrand;
+  tag.innerHTML = activeBrand
+    ? (activeBrand === 'otros' ? 'Otras marcas' : label) + ' <span class="x" aria-hidden="true">\u2715</span>'
+    : '';
+  tag.title = 'Quitar filtro de marca';
+}
+
+var brandTagEl = document.getElementById('brandTag');
+if (brandTagEl) {
+  brandTagEl.addEventListener('click', function() {
+    clearBrand();
+    applyFilters();
+    syncBrandLinks();
+  });
+}
+
+document.querySelectorAll('.brand-link').forEach(function(btn) {
+  var brand = btn.dataset.brand;
+  var items = AVAILABLE_PRODUCTS.filter(function(p) { return matchesBrand(p, brand); });
+
+  // Sin productos activos de esa marca: se ve atenuada y no hace nada,
+  // para no mandar al cliente a un catálogo vacío.
+  if (!items.length) {
+    btn.disabled = true;
+    btn.title = 'Sin existencias por ahora';
+    btn.setAttribute('aria-disabled', 'true');
+    return;
+  }
+  btn.title = brand === 'otros' ? 'Ver otras marcas' : 'Ver productos ' + btn.textContent;
+
+  btn.addEventListener('click', function() {
+    if (activeBrand === brand) {
+      clearBrand();
+    } else {
+      activeBrand = brand;
+      searchTerm = '';
+      document.getElementById('searchInput').value = '';
+      activeFilter = 'Todos';
+      document.getElementById('categorySelect').value = 'Todos';
+      // Marca elegida = todo lo de esa marca, Dama y Caballero juntos.
+      // Si después toca Dama o Caballero, se acota dentro de la marca.
+      setGender('Todos');
+    }
+
+    applyFilters();
+    syncBrandLinks();
+    document.querySelector('.toolbar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 });
 
 applyFilters();
