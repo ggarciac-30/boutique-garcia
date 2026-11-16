@@ -665,4 +665,62 @@ const PRODUCTS = [
     detalle: 'Medidas: PENDIENTE',
 },
 
+// ── Nuevos productos (nov 2026) ───────────────────────────────
+// Precio = precio de la foto x 1.2 (mismo esquema que el resto del
+// catálogo: con 25% de contado el cliente paga el precio de la foto -10%).
+
+{
+    img:    'images/shoulder-bag-tommy-hilfiger-negro-th.jpg',
+    nombre: 'Shoulder Bag Tommy Hilfiger Negro TH',
+    desc:   'Baguette negra con franja central y monograma TH.',
+    cat:    'Shoulder Bag',
+    price:  '$1,800.00',
+    genero: 'Dama',
+    detalle: 'Medidas: PENDIENTE',
+},
+{
+    img:    'images/crossbody-nine-west-azul-cielo-relieve.jpg',
+    nombre: 'Crossbody Nine West Azul Cielo Relieve',
+    desc:   'Bandolera azul cielo con logo grabado en relieve.',
+    cat:    'Crossbody',
+    price:  '$1,320.00',
+    genero: 'Dama',
+    detalle: 'Medidas: PENDIENTE',
+},
+{
+    img:    'images/cosmetiquera-guess-rosa-logo-g.jpg',
+    nombre: 'Cosmetiquera Guess Rosa Logo G',
+    desc:   'Neceser con monograma G y triángulo metálico.',
+    cat:    'Accesorios',
+    price:  '$1,080.00',
+    genero: 'Dama',
+},
+{
+    img:    'images/cartera-guess-negro-logo-relieve.jpg',
+    nombre: 'Cartera Guess Negro Logo Relieve',
+    desc:   'Solapa con G en relieve, letras plateadas y asa de mano.',
+    cat:    'Wallet',
+    price:  '$1,440.00',
+    genero: 'Dama',
+    detalle: 'Medidas: PENDIENTE',
+},
+{
+    img:    'images/crossbody-tommy-hilfiger-azul-camara.jpg',
+    nombre: 'Crossbody Tommy Hilfiger Azul Cámara',
+    desc:   'Mini cámara granulada con correa de logo.',
+    cat:    'Crossbody',
+    price:  '$1,440.00',
+    genero: 'Dama',
+    detalle: 'Medidas: PENDIENTE',
+},
+{
+    img:    'images/mini-satchel-steve-madden-camel.jpg',
+    nombre: 'Mini Satchel Steve Madden Camel',
+    desc:   'Mini bolsa de asas camel con correa cruzada.',
+    cat:    'Satchel',
+    price:  '$1,440.00',
+    genero: 'Dama',
+    detalle: 'Medidas: PENDIENTE',
+},
+
 ];
